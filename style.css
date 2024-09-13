@@ -1,0 +1,52 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+h2 {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    display: flex;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    width: auto;
+}
+
+button {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-style: inset;
+    border-color: black;
+    border-width: 5px;
+}
