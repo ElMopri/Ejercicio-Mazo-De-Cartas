@@ -7,8 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
-
+    <div class="container2">
+        <img src="img/logo.jpg" alt="logo">
+        <!--Donde van las cartas-->
+        <div class="column1">
+            <h2>Primera Columna (70%)</h2>
+            <p>Contenido de la primera columna.</p>
+        </div>
+        <div class="column2">
+            <!--Esta es la tabla de cartas registradas-->
+            <div class="section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Carta</th>
+                            <th>Cant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>As de diamantes</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Dos de diamantes</td>
+                            <td>1</td>
+                        </tr>
+                        <!--Donde van las tablas registradas-->
+                    </tbody>
+                </table>
+            </div>
+            <!--Este es el formulario para registrar una carta-->
+            <div class="section">
+                <h4>Registro de carta</h4>
+                <form id="loginForm">
+                    <label for="numero">Número:</label>
+                    <input type="text" id="numero" name="numero" required>
+                    <label for="carta">Carta:</label>
+                    <input type="text" id="carta" name="carta" required>
+                    <button type="submit">Guardar</button>
+                </form>
+            </div>
+        </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
