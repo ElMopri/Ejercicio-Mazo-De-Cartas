@@ -7,13 +7,13 @@ body {
 img{
     width: 150px;
     height: 100px;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
 }
 
 .container {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 10px auto;
     padding: 20px;
     border-width: 5px;
     border-color: black;
@@ -49,4 +49,5 @@ button {
     border-style: inset;
     border-color: black;
     border-width: 5px;
+    font-family: cursive;
 }
