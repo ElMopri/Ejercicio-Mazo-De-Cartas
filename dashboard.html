@@ -11,8 +11,31 @@
         <img src="img/logo.jpg" alt="logo">
         <!--Donde van las cartas-->
         <div class="column1">
-            <h2>Primera Columna (70%)</h2>
-            <p>Contenido de la primera columna.</p>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img class="imgCarta" src="img/1.png" alt="carta1"></td>
+                        <td><img class="imgCarta" src="img/2.png" alt="carta2"></td>
+                        <td><img class="imgCarta" src="img/3.png" alt="carta3"></td>
+                        <td><img class="imgCarta" src="img/4.png" alt="carta4"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="imgCarta" src="img/5.png" alt="carta5"></td>
+                        <td><img class="imgCarta" src="img/6.png" alt="carta6"></td>
+                        <td><img class="imgCarta" src="img/7.png" alt="carta7"></td>
+                        <td><img class="imgCarta" src="img/8.png" alt="carta8"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="imgCarta" src="img/9.png" alt="carta9"></td>
+                        <td><img class="imgCarta" src="img/10.png" alt="carta10"></td>
+                        <td><img class="imgCarta" src="img/11.png" alt="carta11"></td>
+                        <td><img class="imgCarta" src="img/12.png" alt="carta12"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="imgCarta" src="img/13.png" alt="carta13"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="column2">
             <!--Esta es la tabla de cartas registradas-->
@@ -45,9 +68,9 @@
                 <h4>Registro de carta</h4>
                 <form id="loginForm">
                     <label for="numero">Número:</label>
-                    <input type="text" id="numero" name="numero" required>
+                    <input type="text" id="numero" name="numero" placeholder="Ingrese el numero" required>
                     <label for="carta">Carta:</label>
-                    <input type="text" id="carta" name="carta" required>
+                    <input type="text" id="carta" name="carta" placeholder="Descripcion de la carta" required>
                     <button type="submit">Guardar</button>
                 </form>
             </div>
