@@ -1,10 +1,11 @@
+/* Estilos base */
 body {
     font-family: cursive;
     margin: 0;
     padding: 0;
 }
 
-img{
+img {
     width: 150px;
     height: 100px;
     margin: 5px;
@@ -20,11 +21,7 @@ img{
     border-style: solid;
 }
 
-h2 {
-    text-align: left;
-}
-
-h4 {
+h2, h4 {
     text-align: left;
 }
 
@@ -88,7 +85,7 @@ button {
     border-style: inset;
 }
 
-table{
+table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
@@ -112,11 +109,75 @@ tr:nth-child(even) {
     background-color: #f0f0f0;
 }
 
-.imgCarta{
+.imgCarta {
     width: 80px;
     height: 80px;
 }
 
-.imgCarta:hover{
+.imgCarta:hover {
     background-color: red;
+}
+
+/* Estilos responsivos */
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .container2 {
+        flex-direction: column; /* Cambia a columnas en móviles */
+    }
+
+    .column1, .column2 {
+        width: 100%; /* Ambas columnas ocupan el 100% del ancho */
+        padding: 10px;
+    }
+
+    .imgCarta {
+        width: 60px;
+        height: 60px; /* Ajusta el tamaño de las imágenes de las cartas */
+    }
+
+    input, button {
+        width: 100%; /* Input y botón ocupan el 100% */
+        padding: 12px;
+    }
+
+    form {
+        margin-top: 10px;
+    }
+
+    table, th, td {
+        font-size: 14px; /* Reducimos el tamaño de texto en la tabla */
+    }
+}
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container2 {
+        flex-direction: column; /* Columnas apiladas en tablets */
+    }
+
+    .column1, .column2 {
+        width: 100%; /* Ocupan el 100% en pantallas medianas */
+    }
+
+    .imgCarta {
+        width: 70px;
+        height: 70px; /* Ajuste de tamaño para tablets */
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 1024px) {
+    .container2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .column1 {
+        flex: 70%;
+    }
+
+    .column2 {
+        flex: 30%;
+    }
 }
